@@ -1,0 +1,31 @@
+# Default variables
+px_endpoint = "https://<PX_IP>:8006/api2/json"
+px_user = "PX_USER"
+px_password = "PX_PASSWORD"
+px_target_node = "PX_NODE"
+px_tls = true
+
+cluster_name="newtest"
+cluster_desc="Test cluster for terraform and proxmox"
+cluster_clone = "ct108"
+cluster_storage = "local-ssd"
+cluster_agent = 1
+cluster_os_type = "cloud-init"
+cluster_scsihw = "virtio-scsi-pci"
+
+cluster_subnet = "10.5.6" # subnet without last octet
+cluster_start_ip = 32
+cluster_gw = "10.5.6.10"
+cluster_cidr = 24
+cluster_tag = 92
+cluster_ssh = "SSH_KEY"
+
+cluster_master_count = 2
+cluster_master_memory = 4096
+cluster_master_cores = 2
+cluster_master_dsize = 40
+
+cluster_worker_count = 2
+cluster_worker_memory = 4096
+cluster_worker_cores = 2
+cluster_worker_dsize = 40
