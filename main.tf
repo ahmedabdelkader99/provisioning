@@ -54,8 +54,8 @@ provider "proxmox" {
 
 resource "proxmox_vm_qemu" "master" {
     count = var.cluster_master_count
-    name = "${var.cluster_name}-master-${count.index + 1}"
-    desc = "${var.cluster_desc} - master node ${count.index + 1}"
+    name = "${var.cluster_name}-masterTest-${count.index + 1}"
+    desc = "${var.cluster_desc} - masterTest node ${count.index + 1}"
     tags = "${var.cluster_name}_kubernetes_master_node_${count.index + 1}"
     target_node = "${var.px_target_node}"
     clone = "${var.cluster_clone}"
