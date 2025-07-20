@@ -1,7 +1,5 @@
 # Default variables
 px_endpoint = "https://10.103.22.74:8006/api2/json"
-px_user = "root@pam"
-px_password = "VPSie@1234"
 px_target_node = "UAEVpsie04"
 px_tls = true
 
