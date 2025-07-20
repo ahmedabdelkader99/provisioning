@@ -18,12 +18,12 @@ cluster_cidr = 24
 cluster_tag = 22
 cluster_ssh = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCldYtoQeUGQ6G81XFyRdPfun+8YeMA4JHh/+x/gWL8Ifl4k9ZBIlEW/oxBIow69N3FjGvy0kRiS7hQsOFqjziNMWHRI/ZXnszbvNPQLf3J/AR0AQXKZtBqelMfgak0zzkTNQ+3rdB/VzY/ltstnDERuLUs1u3huaZlzM7uFQQHRurgiMiz94pIapELaemY0ztYaohKe4tpVJTKplTrUqJTOvxmrKEc+VW0X3T9rxvW8YJd9s0HrwFwc4RFSnNJ4JoM0fkrxBHvHIiZqNj+X7fI1SHeiQrsReuN4UmRQlDbsbQogDxu7HqspGGmWmFY1aUr1JKaKkJY00wEtzZYFQEGh56LeZPRIt/7k33DHcaQnMDkqBj2CaJL++vQloR2qGlOwCvyurytHIKZxKI27qXKmrdw6VXITywGLirXtPsNUJx3GEqPjYVSYLxBPawPtflUmxIIrozCY/1CjhZ1SmqlPpjMZ4rmN60mcC7WMbCmrQIFS4yDH9io7XbDs2+XxgfikwWDSo2VzcVypnQrihF1LeNe4GUZQj8DgrwneB/qKoBK+Lg4lKHCmNqxRtHlB+HBbpIxxdjH30sxMHuSy18/lXD4VQBQOyOXMiEj3Fu4V7iomR3QwamBGSHf8b6aURyAlp3S8I8nz/f/IHYsfR4+RuyQj3lMc+cmXeKiMa7E2Q== your_email@example.com"
 
-cluster_master_count = 2
+cluster_master_count = 1
 cluster_master_memory = 4096
 cluster_master_cores = 2
 cluster_master_dsize = 40
 
-cluster_worker_count = 1
+cluster_worker_count = 2
 cluster_worker_memory = 4096
 cluster_worker_cores = 2
 cluster_worker_dsize = 40
