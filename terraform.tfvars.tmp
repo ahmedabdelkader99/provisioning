@@ -23,7 +23,7 @@ cluster_master_memory = 4096
 cluster_master_cores = 2
 cluster_master_dsize = 40
 
-cluster_worker_count = 2
+cluster_worker_count = 1
 cluster_worker_memory = 4096
 cluster_worker_cores = 2
 cluster_worker_dsize = 40
