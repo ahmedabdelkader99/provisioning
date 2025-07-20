@@ -10,9 +10,9 @@ terraform {
 provider "proxmox" {
 
       pm_tls_insecure = true
-      pm_api_url = "https://10.5.6.231:8006/api2/json"
+      pm_api_url = "https://10.x.x.x:8006/api2/json"
       pm_password = "Admin247rack"
-      pm_user = "root@pam"
+      pm_user = "X@pam"
 
 }
 
@@ -22,7 +22,7 @@ resource "proxmox_vm_qemu" "worker01" {
 
     # Node name has to be the same name as within the cluster
     # this might not include the FQDN
-    target_node = "laxvpsied01"
+    target_node = "nodename"
 
     # The destination resource pool for the new VM - Pool not a storage
     # pool = "local-ssd"
@@ -75,7 +75,7 @@ resource "proxmox_vm_qemu" "worker01" {
     # Setup the ip address using cloud-init.
     boot = "order=virtio0"
     # Keep in mind to use the CIDR notation for the ip.
-    ipconfig0 = "ip=10.5.6.34/24,gw=10.5.6.10"
+    ipconfig0 = "ip=10.x.x.x/24,gw=10.x.x.x"
 
     sshkeys = <<EOF
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCTEv94K1Fdq5Hksz6ltZGQAXtam8olX/BXzKLfai9PrAG9sEJdhNLqIdVj0Jffq2z3xw3oLaKNYmlb5zv4UYxeAG7AOIVKNXPTInbbpkbg5mO8iuLOdoCIDOqa5Zv9SdVCNWG+K45pXtKqHUUlyODOdsWn/JcvSL2vP1Np93qilvObA2ueXnDAEFKEbOrtiIZiyI/oxfX7VBWSfMQHFrJgNyiXphhj7xH/8iZeuXAF70q4x+a+hAP+hwqbHQbR15X68jypwfSBut199o+2pUNFqB8IMlCLwUzJH1ZG2Ho6tHeWMOfa1Nbzu5vbEtPjtUGw/qbmoJ94TI4z1mebiJiIxA1h9SJFZ85FmMwVopy5fso36Bz58OWUlFBBwj5brXapDI5AGXgDBvX1TE77Rl27xJ2J0UWnp9mLtC8HvWw/ea8ZFXMK1A9M8QHhyY/NTAJJM43C523GVVbdF/fcYnQq2ZyQHvMknR64cZqI0Qq1I5IhtHj6Qx1N3iuGaMqXdumOqTjmnSnIgT5HWOJwJpgjbHxIGFWjUtZUf1/q+aqQlPQBqRfeps6LPonF0nsXE3pZHQvXLo0bg01h5CbBZucjeTLJUwDUs8YibTnTwL7eTJEsUa5x5XEaqOlxaETbv59hwIDktH9KmiRdnCjpsjHKzicmA+3REnYzR8n93IqGJQ== amattar@proton.me
